@@ -59,8 +59,9 @@ export class Map extends React.Component {
 
 
     render() {
+        console.log('url', this.props.sourceUrl);
         return (
-           <div className="{mapWrapperClassName}">
+           <div className={mapWrapperClassName}>
                 <svg 
                     height="350px" 
                     id="Vrstva_1" 
@@ -71,10 +72,12 @@ export class Map extends React.Component {
                     y="0px"
                     xmlSpace="preserve">
 
-                     {this.state.scores.map( (score) => this.mapScoreToMapZones(score)) }
+               {/*      {this.state.scores.map( (score) => this.mapScoreToMapZones(score)) }*/}
+               dddd
                 </svg>
 
                 <div className="info-box" ref={(div) => this.info = div}></div>
+                
             </div>
         )
     }
