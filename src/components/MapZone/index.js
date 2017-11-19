@@ -8,13 +8,13 @@ class MapZone extends React.Component {
     
 
     render() {
+        console.log('d', this.props.d);
         return (
             <path
                 fill={this.props.color}
                 stroke='#fff'
-                stroke-width="0"
-                stroke-opacity="1"
-                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-opacity: 1; opacity: 1;"
+                strokeWidth="0"
+                strokeOpacity="1"
                 d={this.props.d}
                 onMouseOver={this.props.handleOnHover}
                 onMouseOut={this.props.handleOnOut}
